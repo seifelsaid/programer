@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:"Poppins",sans-serif;
+}
+main{
+    background:#6610f2;
+}
+.container{
+    width:100%;
+    margin:0 auto;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 60px;
+}
+.menu_items li a:hover{
+    color:rgb(255, 74, 74);
+}
+.menu_items{
+    display:flex;
+    list-style: none;
+    gap:20px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.hero{
+    min-height: 100vh;
+    width:100%;
+    background:url("images/bg-dot.png"),url("images/bg-dot.png"),url("images/bg-round.png"),url("images/bg-tree.png"),url("images/bg-bottom-hero.png");
+    background-position: 10px 10px,bottom 190px right 10px, left 55% top -1%,center bottom -1%,center bottom -1px;
+    background-repeat:no-repeat;
+}
+.hero .row{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero .row h2,
+.hero .row p{
+    color:white;
+}
+.hero .row h2{
+    font-size:36px;
+    margin-bottom:15px;
+}
+.hero .column{
+    width:50%;
+}
+.heroimg{
+    width:80%;
+}
+.button{
+    display:flex;
+    margin-top:20px;
+    gap:20px;
+}
+.btn{
+    background:white;
+    padding:15px 15px;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.btn:last-child{
+    border:2px solid white;
+    background:transparent;
+    color:white;
+}
+.btn:last-child:hover{
+    background:white;
+    color:black;
+}
+.btn:first-child:hover{
+    background:transparent;
+    color:white;
+    border:2px solid white;
+}
